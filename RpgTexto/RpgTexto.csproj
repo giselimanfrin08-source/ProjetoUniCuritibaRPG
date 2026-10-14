@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>RpgTexto</RootNamespace>
+    <AssemblyName>RpgTexto</AssemblyName>
+  </PropertyGroup>
+
+  <!-- Os arquivos de dados ficam na pasta Dados do projeto e são copiados
+       para a mesma pasta do executável a cada compilação. -->
+  <ItemGroup>
+    <None Update="Dados\*.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <TargetPath>%(Filename)%(Extension)</TargetPath>
+    </None>
+  </ItemGroup>
+
+</Project>

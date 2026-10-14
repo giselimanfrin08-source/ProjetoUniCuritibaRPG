@@ -1,0 +1,268 @@
+# =====================================================================
+# textos.txt - todos os diálogos, descrições e mensagens do jogo
+# Formato: chave=texto
+#   {0}, {1}... são substituídos por valores durante o jogo
+#   \n quebra a linha
+#   linhas que começam com # são comentários
+# =====================================================================
+
+# ---------------------------------------------------------------- Interface geral
+ui.prompt=> Escolha uma opção:
+ui.opcao_invalida=Opção inválida. Digite um número de {0} a {1}.
+ui.texto_vazio=O texto não pode ficar vazio.
+ui.texto_longo=Use no máximo {0} caracteres.
+ui.sim=Sim
+ui.nao=Não
+ui.voltar=Voltar
+ui.pausa=\nPressione ENTER para continuar...
+dados.avisos=Avisos ao carregar os arquivos de dados
+
+# ---------------------------------------------------------------- Menu principal
+jogo.titulo=Crônicas do Vale Cinzento
+jogo.subtitulo=Um RPG em modo texto
+menu.titulo=Menu principal
+menu.novo=Novo jogo
+menu.carregar=Carregar jogo
+menu.sair=Sair
+menu.ate_logo=Até a próxima aventura!
+
+# ---------------------------------------------------------------- Criação do grupo
+novo.titulo=Criação do grupo
+novo.introducao=Monte seu grupo com 4 aventureiros. Cada um tem um nome e uma classe.
+novo.nome=Nome do {0}º aventureiro:
+novo.classe_pergunta=Escolha a classe de {0}
+novo.classe_opcao={0} - Vida {1}, Mana {2}, ATQ {3}, DEF {4}, VEL {5}\n      {6}
+novo.adicionado={0} ({1}) entrou para o grupo!
+novo.sem_classes=Nenhuma classe jogável foi encontrada no classes.txt.
+historia.titulo=O começo da jornada
+historia.texto=Há meses, o Vale Cinzento vive sob ameaça. Lobos rondam as plantações,\numa bruxa domina o pântano e criaturas saem das minas abandonadas.\n\nSeu grupo chega à Vila de Pedra Clara em busca de trabalho e glória.\nVisite as tavernas, aceite quests, fortaleça seus heróis e descubra\no que está despertando nas profundezas do vale.
+
+# ---------------------------------------------------------------- Exploração
+explorar.pergunta=O que deseja fazer?
+explorar.status=Ver status do grupo
+explorar.inventario=Abrir inventário
+explorar.diario=Diário de quests
+explorar.menu=Voltar ao menu principal
+explorar.confirmar_saida=Voltar ao menu principal? O progresso não salvo será perdido.
+explorar.sem_inimigos=A região está tranquila. Nenhum inimigo por perto.
+explorar.encontro=Vocês vasculham a região e encontram inimigos!
+viagem.emboscada=Emboscada em {0}!
+cidade.opcao.taverna=Visitar a taverna
+cidade.opcao.inn=Descansar no INN ({0} moedas)
+cidade.opcao.loja=Ir à loja
+cidade.opcao.viajar=Partir para {0}
+campo.opcao.explorar=Procurar inimigos pela região
+campo.opcao.seguir=Seguir para {0}
+caverna.opcao.explorar=Explorar as profundezas
+caverna.opcao.tesouro=Procurar tesouros
+caverna.opcao.sair=Sair em direção a {0}
+tesouro.esgotado=Vocês já vasculharam cada canto. Não há mais tesouros aqui.
+tesouro.guardioes=Criaturas guardam o tesouro e atacam!
+tesouro.encontrado=Vocês encontraram: {0}! O item foi guardado no inventário.
+fim.titulo=Fim de jogo
+fim.texto=Todo o grupo caiu em combate...\nCarregue o último save para tentar novamente.
+
+# ---------------------------------------------------------------- Status e diário
+status.titulo=Status do grupo
+status.resumo={0,-15} {1,-11} Nv {2,-2} {3} Vida {4,3}/{5,-3}  Mana {6,3}/{7,-3}
+status.dinheiro=Moedas do grupo: {0}
+status.cabecalho={0} - {1} (nível {2})
+status.xp=Experiência: {0}/{1}
+status.vida_mana=Vida: {0}/{1}   Mana: {2}/{3}
+status.atributos=Ataque: {0}   Defesa: {1}   Velocidade: {2}
+status.dinheiro_personagem=Moedas: {0}
+status.equipamento=Arma: {0}   Armadura: {1}
+status.especial={0} ({1} mana)
+status.especiais=Especiais: {0}
+status.nenhum=nenhuma
+personagem.opcao={0} ({1}) - Vida {2}/{3}, Mana {4}/{5}
+diario.titulo=Diário de quests
+diario.vazio=Nenhuma quest em andamento. Visite uma taverna para aceitar quests.
+diario.progresso=Situação: {0} ({1}/{2})
+diario.entregues=Quests entregues: {0} de {1}.
+quest.status.disponivel=Disponível
+quest.status.ativa=Em andamento
+quest.status.concluida=Concluída - volte à taverna para receber a recompensa
+quest.status.entregue=Entregue
+quest.concluida=Quest concluída: {0}! Volte à taverna para receber a recompensa.
+quest.progresso=Quest "{0}": {1}/{2}
+nivel.subiu={0} subiu para o nível {1}!
+
+# ---------------------------------------------------------------- Taverna
+taverna.titulo=Taverna - {0}
+taverna.pergunta=O que deseja fazer?
+taverna.opcao.quests=Ver quests disponíveis ({0})
+taverna.opcao.entregar=Entregar quests concluídas ({0})
+taverna.opcao.conversar=Conversar com o taverneiro
+taverna.quests_titulo=Quests disponíveis
+taverna.sem_quests=Não há quests disponíveis nesta taverna no momento.
+taverna.recompensa=Recompensa: {0} XP, {1} moedas, item: {2}
+taverna.sem_item=nenhum
+taverna.aceitar=Aceitar esta quest?
+taverna.aceita=Quest aceita: {0}. Acompanhe pelo diário de quests.
+taverna.nada_entregar=Nenhuma quest concluída para entregar aqui.
+taverna.entregue=Quest entregue: {0}! O grupo recebeu {1} XP e {2} moedas.
+taverna.item_recebido=Item recebido: {0}.
+
+# ---------------------------------------------------------------- INN
+inn.titulo=INN - {0}
+inn.descricao=Camas limpas, sopa quente e um lugar seguro para registrar sua jornada.
+inn.pergunta=O que deseja fazer?
+inn.opcao.descansar=Descansar e recuperar o grupo ({0} moedas)
+inn.opcao.salvar=Salvar o jogo
+inn.sem_dinheiro=O descanso custa {0} moedas e o grupo tem apenas {1}.
+inn.descansou=O grupo descansou e recuperou toda a vida e a mana. (-{0} moedas)
+save.sobrescrever=Já existe um jogo salvo. Deseja substituí-lo?
+save.sucesso=Jogo salvo com sucesso!
+save.erro=Não foi possível gravar o arquivo save.txt.
+save.inexistente=Nenhum jogo salvo foi encontrado.
+save.invalido=O arquivo save.txt está corrompido ou foi alterado e não pode ser carregado.
+save.carregado=Jogo carregado! O grupo está em {0}.
+
+# ---------------------------------------------------------------- Loja
+loja.titulo=Loja
+loja.boas_vindas=O vendedor sorri atrás do balcão: "Dê uma olhada, aventureiro!"
+loja.pergunta=O que deseja fazer?
+loja.opcao.pocoes=Comprar poções
+loja.opcao.armas=Comprar armas
+loja.opcao.armaduras=Comprar armaduras
+loja.opcao.vender=Vender itens
+loja.sem_itens=Esta loja não tem itens desta categoria.
+loja.comprar_pergunta=Qual item deseja comprar?
+loja.confirmar_compra=Comprar {0} por {1} moedas?
+loja.item_indisponivel={0} não está à venda aqui.
+loja.sem_dinheiro={0} custa {1} moedas e o grupo tem apenas {2}.
+loja.comprado={0} comprado por {1} moedas.
+loja.vender_titulo=Vender itens
+loja.vender_pergunta=Qual item deseja vender? (a loja paga metade do preço)
+loja.vendido={0} vendido por {1} moedas.
+categoria.pocao=Poções
+categoria.arma=Armas
+categoria.armadura=Armaduras
+
+# ---------------------------------------------------------------- Inventário e itens
+inventario.titulo=Inventário
+inventario.vazio=O inventário está vazio.
+inventario.pergunta=Escolha um item para usar ou equipar
+inventario.quem=Quem vai usar {0}?
+inventario.equipamento={0,-15} Arma: {1,-22} Armadura: {2}
+item.alvo_derrotado={0} está fora de combate. Descanse no INN para recuperar o grupo.
+item.sem_efeito={1} não teria efeito em {0} agora.
+item.nao_encontrado={0} não está no inventário.
+item.pocao_usada={1} em {0}: {2}.
+item.recuperou_vida=+{0} de vida
+item.recuperou_mana=+{0} de mana
+item.classe_invalida={0} ({1}) não pode usar {2}.
+item.equipado={0} equipou {1}.
+item.equipado_troca={0} equipou {1}. {2} voltou para o inventário.
+item.quantidade={0} x{1}
+item.preco={0} moedas
+item.todas_classes=Todas as classes
+bonus.vida=+{0} Vida
+bonus.mana=+{0} Mana
+bonus.ataque=+{0} ATQ
+bonus.defesa=+{0} DEF
+bonus.velocidade={0:+0;-0} VEL
+
+# ---------------------------------------------------------------- Batalha
+batalha.titulo=Batalha - rodada {0}
+batalha.inimigos=Inimigos
+batalha.grupo=Seu grupo
+batalha.registro=Acontecimentos
+batalha.linha_inimigo={0,-24} {1} {2}/{3}
+batalha.linha_inimigo_derrotado={0,-24} derrotado
+batalha.linha_personagem={0,-15} {1} Vida {2}/{3}  Mana {4}/{5}
+batalha.marcador_defesa=[defendendo]
+batalha.inicio=Inimigos à frente: {0}
+batalha.vez=>> Vez de {0} ({1})
+batalha.pergunta=O que fazer?
+batalha.acao.atacar=Atacar
+batalha.acao.defender=Defender (reduz o dano pela metade até o próximo turno)
+batalha.acao.especial=Usar especial
+batalha.acao.item=Usar poção
+batalha.acao.fugir=Fugir
+batalha.escolher_alvo=Escolha o alvo
+batalha.opcao_alvo={0} ({1}/{2} vida)
+batalha.escolher_especial=Especiais (mana atual: {0})
+batalha.opcao_especial={0} - {1} mana - {2}
+batalha.opcao_especial_sem_mana={0} - {1} mana - {2} [mana insuficiente]
+batalha.escolher_aliado=Escolha o aliado
+batalha.escolher_item=Escolha a poção
+batalha.sem_pocoes=Não há poções no inventário.
+batalha.item_invalido={0} não pode ser usado em batalha.
+batalha.item_usado={0} usa um item do inventário.
+batalha.alvo_invalido=Alvo inválido.
+batalha.ataque={0} ataca {1} e causa {2} de dano.
+batalha.derrotado={0} caiu!
+batalha.defesa={0} se prepara para defender.
+batalha.fuga_sucesso=O grupo conseguiu fugir!
+batalha.fuga_falhou=A fuga falhou! Os inimigos bloquearam o caminho.
+batalha.fugiu=Vocês escaparam da batalha.
+batalha.derrota=Todo o grupo foi derrotado...
+batalha.vitoria=Vitória! Cada aventureiro de pé recebeu {0} de XP e o grupo ganhou {1} moedas.
+especial.desconhecido={0} não conhece o especial {1}.
+especial.sem_mana={0} não tem mana suficiente para {1}.
+especial.alvo_invalido=Alvo inválido para este especial.
+especial.nenhum={0} não possui especiais.
+especial.usado={0} usa {1}!
+especial.dano=  {0} sofre {1} de dano.
+especial.cura=  {0} recupera {1} de vida.
+especial.dreno=  {0} absorve {1} de vida.
+
+# ---------------------------------------------------------------- Cidades
+cenario.pedra_clara.nome=Vila de Pedra Clara
+cenario.pedra_clara.descricao=Uma vila pacata de casas de pedra branca, cercada por plantações de trigo.\nOs moradores falam baixo sobre os lobos que rondam os campos à noite.
+cenario.pedra_clara.taverna=A taverna "O Javali Dourado" cheira a pão e cerveja. Caçadores dividem histórias perto da lareira.
+cenario.pedra_clara.taverneiro=Taverneiro Bruno: "Os lobos dos Campos Dourados estão cada vez mais ousados.\nE dizem que o capitão de Ventor procura gente corajosa... se precisar de trabalho, olhe o quadro de quests."
+
+cenario.porto_lume.nome=Porto Lume
+cenario.porto_lume.descricao=Uma cidade portuária movimentada, com navios mercantes e o cheiro de sal no ar.\nDesde que a névoa chegou do pântano, poucos barcos se arriscam a sair.
+cenario.porto_lume.taverna=A taverna "A Âncora Partida" está cheia de marinheiros desconfiados e mapas pregados nas paredes.
+cenario.porto_lume.taverneiro=Taverneira Marina: "Uma bruxa tomou o Pântano Cinzento, e a Gruta das Marés está infestada.\nPagamos bem para quem limpar essa bagunça."
+
+cenario.ventor.nome=Fortaleza de Ventor
+cenario.ventor.descricao=Uma cidade murada no alto da colina, protegida por soldados de armadura reluzente.\nDas muralhas é possível ver a fumaça que sobe do Planalto das Cinzas.
+cenario.ventor.taverna=A taverna "O Escudo de Ferro" é frequentada por soldados de folga e mercenários experientes.
+cenario.ventor.taverneiro=Taverneiro Otávio: "Os kobolds da mina ganharam um rei, e um wyvern faz ninho no planalto.\nSe o seu grupo estiver forte, há trabalho de verdade por aqui."
+
+# ---------------------------------------------------------------- Campos abertos
+cenario.campo_dourado.nome=Campos Dourados
+cenario.campo_dourado.descricao=Plantações de trigo a perder de vista ligam Pedra Clara a Porto Lume.\nO vento balança as espigas... ou seria algo se movendo entre elas?
+
+cenario.bosque_sussurrante.nome=Bosque Sussurrante
+cenario.bosque_sussurrante.descricao=Árvores antigas formam um túnel verde na estrada para Ventor.\nUma trilha estreita desce até a entrada de uma mina abandonada.
+
+cenario.pantano_cinzento.nome=Pântano Cinzento
+cenario.pantano_cinzento.descricao=A névoa espessa esconde a trilha de tábuas entre Porto Lume e Ventor.\nRisadas estranhas ecoam ao longe.
+
+cenario.costa_naufragios.nome=Costa dos Naufrágios
+cenario.costa_naufragios.descricao=Cascos de navios apodrecem na areia escura. Ao norte, as ondas batem\nna entrada da Gruta das Marés.
+
+cenario.planalto_cinzas.nome=Planalto das Cinzas
+cenario.planalto_cinzas.descricao=Um planalto queimado, coberto de pedras negras e fumaça.\nUma passagem estreita leva aos túneis inferiores da mina abandonada.
+
+# ---------------------------------------------------------------- Cavernas
+cenario.mina_abandonada.nome=Mina Abandonada
+cenario.mina_abandonada.descricao=Trilhos enferrujados se perdem na escuridão. O som de picaretas\nainda ecoa... mas os mineiros foram embora há anos.
+
+cenario.gruta_mares.nome=Gruta das Marés
+cenario.gruta_mares.descricao=Uma gruta úmida onde a água do mar entra e sai com as ondas.\nAlgo brilha no fundo das poças.
+
+# ---------------------------------------------------------------- Quests
+quest.q_lobos.titulo=A ameaça dos lobos
+quest.q_lobos.descricao=Os lobos cinzentos estão atacando os rebanhos de Pedra Clara.\nDerrote 4 Lobos Cinzentos nos Campos Dourados ou no Bosque Sussurrante.
+
+quest.q_carta.titulo=Carta para Ventor
+quest.q_carta.descricao=O prefeito de Pedra Clara precisa enviar uma carta urgente ao capitão da guarda.\nLeve-a até a Fortaleza de Ventor.
+
+quest.q_bruxa.titulo=A bruxa do pântano
+quest.q_bruxa.descricao=Uma bruxa espalha névoa e doença pelo Pântano Cinzento.\nEncontre e derrote a Bruxa do Pântano.
+
+quest.q_gruta.titulo=Limpando a Gruta das Marés
+quest.q_gruta.descricao=Os pescadores não conseguem mais usar a gruta como abrigo.\nDerrote 6 criaturas dentro da Gruta das Marés.
+
+quest.q_mina.titulo=O rei dos kobolds
+quest.q_mina.descricao=Os kobolds da Mina Abandonada se organizaram sob um líder e atacam as caravanas de Ventor.\nDerrote o Rei Kobold.
+
+quest.q_wyvern.titulo=Sombras sobre o planalto
+quest.q_wyvern.descricao=Um wyvern faz ninho no Planalto das Cinzas e ameaça as muralhas de Ventor.\nDerrote o Wyvern. Recomendado apenas para grupos experientes.

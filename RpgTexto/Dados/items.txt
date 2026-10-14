@@ -1,0 +1,61 @@
+# =====================================================================
+# items.txt - itens do jogo (poções, armas e armaduras)
+# Para adicionar um item basta incluir uma nova linha.
+#
+# POCAO;id;nome;preco;recuperaVida;recuperaMana;descricao
+# ARMA;id;nome;preco;bonusAtaque;classes;descricao
+# ARMADURA;id;nome;preco;bonusDefesa;bonusVelocidade;classes;descricao
+#
+# classes: ids separados por vírgula (mago,paladino,barbaro,necromante,arqueiro) ou TODAS
+# =====================================================================
+
+# ---------------------------------------------------------------- Poções
+POCAO;pocao_vida_pequena;Poção de Vida Pequena;20;40;0;Um frasco vermelho que fecha pequenos ferimentos.
+POCAO;pocao_vida_grande;Poção de Vida Grande;60;120;0;Um frasco grande de líquido vermelho brilhante.
+POCAO;pocao_mana_pequena;Poção de Mana Pequena;25;0;30;Um frasco azul que restaura parte da energia mágica.
+POCAO;pocao_mana_grande;Poção de Mana Grande;70;0;80;Um frasco azul intenso, usado por magos experientes.
+POCAO;elixir;Elixir Restaurador;150;100;60;Uma mistura rara que recupera corpo e mente.
+
+# ---------------------------------------------------------------- Armas
+ARMA;adaga_ferro;Adaga de Ferro;40;3;TODAS;Leve e simples, qualquer aventureiro sabe usar.
+ARMA;arco_curto;Arco Curto;70;5;arqueiro;Arco de madeira flexível para iniciantes.
+ARMA;espada_curta;Espada Curta;80;5;paladino,barbaro;Lâmina curta e equilibrada.
+ARMA;machado_lenhador;Machado de Lenhador;90;6;barbaro;Feito para cortar árvores, serve bem para cortar inimigos.
+ARMA;lanca_caca;Lança de Caça;100;6;paladino,barbaro,arqueiro;Lança comprida usada por caçadores.
+ARMA;cajado_carvalho;Cajado de Carvalho;60;3;mago,necromante;Cajado simples que canaliza magia.
+ARMA;martelo_bronze;Martelo de Bronze;120;7;paladino,barbaro;Pesado e resistente.
+ARMA;besta_leve;Besta Leve;150;8;arqueiro;Dispara virotes com precisão.
+ARMA;espada_longa;Espada Longa;180;9;paladino,barbaro;Lâmina longa de aço temperado.
+ARMA;arco_longo;Arco Longo;200;10;arqueiro;Grande alcance e força.
+ARMA;cajado_cristal;Cajado de Cristal;220;7;mago;Um cristal azul pulsa na ponta do cajado.
+ARMA;cajado_osso;Cajado de Osso;220;7;necromante;Feito de ossos entalhados com runas sombrias.
+ARMA;machado_guerra;Machado de Guerra;260;12;barbaro;Machado de duas mãos, temido nos campos de batalha.
+ARMA;maca_sagrada;Maça Sagrada;300;12;paladino;Abençoada pelos sacerdotes de Ventor.
+ARMA;tridente_mares;Tridente das Marés;350;13;paladino,barbaro,arqueiro;Arma antiga encontrada nas grutas do litoral.
+ARMA;varinha_arcana;Varinha Arcana;380;11;mago;Varinha que amplifica feitiços.
+ARMA;foice_sombria;Foice Sombria;400;12;necromante;A lâmina parece absorver a luz ao redor.
+ARMA;arco_elfico;Arco Élfico;450;16;arqueiro;Leve como uma pluma e preciso como um falcão.
+ARMA;grimorio_antigo;Grimório Antigo;520;14;mago,necromante;Um livro de feitiços proibidos.
+ARMA;espada_runica;Espada Rúnica;600;18;paladino,barbaro;Runas brilham na lâmina a cada golpe.
+
+# ---------------------------------------------------------------- Armaduras
+ARMADURA;tunica_couro;Túnica de Couro;40;2;0;TODAS;Proteção básica e confortável.
+ARMADURA;manto_aprendiz;Manto do Aprendiz;50;2;1;mago,necromante;Manto leve usado por estudantes de magia.
+ARMADURA;gibao_acolchoado;Gibão Acolchoado;60;3;0;TODAS;Várias camadas de tecido grosso.
+ARMADURA;armadura_couro;Armadura de Couro;90;4;0;TODAS;Couro curtido e reforçado.
+ARMADURA;colete_cacador;Colete do Caçador;120;4;2;arqueiro;Leve, permite movimentos rápidos.
+ARMADURA;pele_urso;Pele de Urso;140;6;0;barbaro;Pele grossa de um urso das montanhas.
+ARMADURA;couro_batido;Couro Batido;160;6;0;paladino,barbaro,arqueiro;Couro endurecido com placas de metal.
+ARMADURA;brunea_bronze;Brunea de Bronze;180;7;-1;paladino,barbaro;Escamas de bronze costuradas em couro.
+ARMADURA;cota_malha;Cota de Malha;220;8;-1;paladino,barbaro;Anéis de ferro entrelaçados.
+ARMADURA;manto_arcano;Manto Arcano;240;5;2;mago;Bordado com símbolos de proteção.
+ARMADURA;manto_sombras;Manto das Sombras;240;5;2;necromante;Tecido escuro que se mistura às sombras.
+ARMADURA;armadura_patrulheiro;Armadura do Patrulheiro;300;8;3;arqueiro;Usada pelos batedores de Ventor.
+ARMADURA;manto_sereno;Manto Sereno;350;7;2;TODAS;Um manto azul que acalma quem o veste.
+ARMADURA;cota_ana;Cota Anã;380;11;0;paladino,barbaro,arqueiro;Forjada por anões, leve e muito resistente.
+ARMADURA;armadura_placas;Armadura de Placas;420;13;-3;paladino;Placas de aço que cobrem o corpo inteiro.
+ARMADURA;couraca_escamas;Couraça de Escamas;480;12;1;barbaro,arqueiro;Feita com escamas de répteis gigantes.
+ARMADURA;vestes_arquimago;Vestes do Arquimago;520;9;3;mago;Vestes lendárias de um antigo mestre.
+ARMADURA;mortalha_lich;Mortalha do Lich;520;9;3;necromante;Ainda guarda o frio do túmulo.
+ARMADURA;placas_reais;Placas Reais;650;17;-3;paladino;A armadura da guarda real de Ventor.
+ARMADURA;armadura_cinzas;Armadura das Cinzas;700;15;1;TODAS;Forjada no calor do Planalto das Cinzas.

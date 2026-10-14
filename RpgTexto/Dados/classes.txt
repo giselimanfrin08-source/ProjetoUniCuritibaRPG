@@ -1,0 +1,39 @@
+# =====================================================================
+# classes.txt - classes jogáveis e seus golpes especiais
+# Para adicionar um golpe especial basta incluir uma linha ESPECIAL.
+#
+# CLASSE;id;nome;vida;mana;ataque;defesa;velocidade;descricao
+# ESPECIAL;idDaClasse;nome;custoMana;poder;tipo;descricao
+#
+# tipos de especial:
+#   DANO_UNICO  - dano em um inimigo
+#   DANO_TODOS  - dano em todos os inimigos
+#   CURA_ALIADO - recupera a vida de um aliado
+#   CURA_GRUPO  - recupera a vida de todo o grupo
+#   DRENAR_VIDA - dano em um inimigo e recupera metade como vida
+# =====================================================================
+
+CLASSE;mago;Mago;70;60;6;4;10;Domina magias de fogo e gelo. Frágil, mas causa muito dano em área.
+ESPECIAL;mago;Raio Arcano;8;28;DANO_UNICO;Um raio de energia pura em um inimigo.
+ESPECIAL;mago;Bola de Fogo;12;20;DANO_TODOS;Uma explosão de chamas atinge todos os inimigos.
+ESPECIAL;mago;Nevasca;20;30;DANO_TODOS;Uma tempestade de gelo congela o campo de batalha.
+
+CLASSE;paladino;Paladino;110;35;11;10;7;Guerreiro sagrado. Resistente e capaz de curar os aliados.
+ESPECIAL;paladino;Golpe Sagrado;8;18;DANO_UNICO;Um golpe envolto em luz divina.
+ESPECIAL;paladino;Luz Curativa;10;35;CURA_ALIADO;Cura os ferimentos de um aliado.
+ESPECIAL;paladino;Bênção;18;25;CURA_GRUPO;Uma luz suave cura todo o grupo.
+
+CLASSE;barbaro;Bárbaro;120;20;14;6;9;Força bruta. Fica ainda mais perigoso quando está ferido.
+ESPECIAL;barbaro;Fúria;6;22;DANO_UNICO;Um ataque furioso em um único inimigo.
+ESPECIAL;barbaro;Redemoinho;10;14;DANO_TODOS;Gira o machado atingindo todos ao redor.
+ESPECIAL;barbaro;Golpe Esmagador;12;35;DANO_UNICO;Um golpe devastador com toda a força.
+
+CLASSE;necromante;Necromante;75;55;7;5;9;Usa magia sombria para drenar a vida dos inimigos.
+ESPECIAL;necromante;Toque Sombrio;8;18;DRENAR_VIDA;Rouba a vida de um inimigo.
+ESPECIAL;necromante;Praga;14;12;DANO_TODOS;Uma névoa doentia atinge todos os inimigos.
+ESPECIAL;necromante;Ceifar Almas;20;40;DANO_UNICO;Arranca a alma de um inimigo.
+
+CLASSE;arqueiro;Arqueiro;85;30;12;5;14;Ágil e preciso. Age primeiro e pode causar acertos críticos.
+ESPECIAL;arqueiro;Tiro Certeiro;6;20;DANO_UNICO;Uma flecha mirada no ponto fraco do inimigo.
+ESPECIAL;arqueiro;Chuva de Flechas;12;14;DANO_TODOS;Dezenas de flechas caem sobre os inimigos.
+ESPECIAL;arqueiro;Flecha Perfurante;10;26;DANO_UNICO;Uma flecha capaz de atravessar armaduras.

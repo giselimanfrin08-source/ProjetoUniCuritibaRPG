@@ -1,0 +1,45 @@
+# =====================================================================
+# monstros.txt - inimigos do jogo
+# Para adicionar um monstro basta incluir uma nova linha.
+#
+# id;nome;vida;ataque;defesa;velocidade;xp;ouro;areas
+#
+# areas: ids dos campos e cavernas onde o monstro aparece, separados por vírgula
+#   campos:   campo_dourado, bosque_sussurrante, pantano_cinzento, costa_naufragios, planalto_cinzas
+#   cavernas: mina_abandonada, gruta_mares
+# =====================================================================
+
+# ---------------------------------------------------------------- Campos Dourados (nível 1)
+lobo_cinzento;Lobo Cinzento;32;9;3;12;14;6;campo_dourado,bosque_sussurrante
+javali_selvagem;Javali Selvagem;40;10;5;7;16;7;campo_dourado
+bandido_estrada;Bandido de Estrada;38;11;4;10;20;15;campo_dourado,pantano_cinzento
+corvo_gigante;Corvo Gigante;24;8;2;16;12;5;campo_dourado,costa_naufragios
+
+# ---------------------------------------------------------------- Bosque Sussurrante (nível 2)
+aranha_bosque;Aranha do Bosque;45;13;5;13;24;10;bosque_sussurrante
+goblin_batedor;Goblin Batedor;42;12;6;12;22;14;bosque_sussurrante,mina_abandonada
+ent_jovem;Ent Jovem;80;14;12;4;40;18;bosque_sussurrante
+
+# ---------------------------------------------------------------- Pântano Cinzento (nível 3)
+sapo_venenoso;Sapo Venenoso;50;15;6;10;28;9;pantano_cinzento
+carnical;Carniçal;65;17;8;8;36;16;pantano_cinzento
+bruxa_pantano;Bruxa do Pântano;90;20;9;11;70;60;pantano_cinzento
+
+# ---------------------------------------------------------------- Costa dos Naufrágios (nível 2-3)
+caranguejo_couracado;Caranguejo Couraçado;55;14;14;5;30;12;costa_naufragios,gruta_mares
+pirata_fantasma;Pirata Fantasma;60;17;7;12;38;25;costa_naufragios
+
+# ---------------------------------------------------------------- Gruta das Marés (nível 3)
+sereia_sombria;Sereia Sombria;62;18;7;14;42;22;gruta_mares
+enguia_eletrica;Enguia Elétrica;48;19;5;16;34;14;gruta_mares
+kraken_jovem;Kraken Jovem;110;22;11;8;90;70;gruta_mares
+
+# ---------------------------------------------------------------- Mina Abandonada (nível 3-4)
+kobold_mineiro;Kobold Mineiro;50;16;8;11;30;18;mina_abandonada
+morcego_vampiro;Morcego Vampiro;40;15;4;18;26;8;mina_abandonada,planalto_cinzas
+rei_kobold;Rei Kobold;130;24;13;9;120;100;mina_abandonada
+
+# ---------------------------------------------------------------- Planalto das Cinzas (nível 4-5)
+salamandra_fogo;Salamandra de Fogo;75;22;10;12;55;30;planalto_cinzas
+golem_pedra;Golem de Pedra;120;23;18;3;70;35;planalto_cinzas
+wyvern;Wyvern;140;27;12;15;130;90;planalto_cinzas

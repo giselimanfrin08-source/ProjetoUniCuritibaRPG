@@ -1,0 +1,20 @@
+# =====================================================================
+# quests.txt - missões oferecidas nas tavernas
+# Título e descrição de cada quest ficam no textos.txt (quest.<id>.titulo / quest.<id>.descricao).
+#
+# id;taverna;tipo;alvo;quantidade;xp;ouro;itemRecompensa
+#
+# taverna: id da cidade (pedra_clara, porto_lume, ventor)
+# tipos:
+#   DERROTAR    - derrotar <quantidade> do monstro <alvo> (id do monstros.txt)
+#   DERROTAR_EM - derrotar <quantidade> monstros quaisquer no local <alvo>
+#   VISITAR     - chegar ao local <alvo>
+# itemRecompensa: id do items.txt ou - para nenhum
+# =====================================================================
+
+q_lobos;pedra_clara;DERROTAR;lobo_cinzento;4;80;60;pocao_vida_grande
+q_carta;pedra_clara;VISITAR;ventor;1;60;80;-
+q_bruxa;porto_lume;DERROTAR;bruxa_pantano;1;150;150;manto_sereno
+q_gruta;porto_lume;DERROTAR_EM;gruta_mares;6;180;120;elixir
+q_mina;ventor;DERROTAR;rei_kobold;1;250;250;espada_runica
+q_wyvern;ventor;DERROTAR;wyvern;1;300;300;armadura_cinzas
